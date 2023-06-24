@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://kit.fontawesome.com/c14bfd1628.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="fav2.png" type="image/png?v=1">
+    <title>Portfolio 2.0</title>
+</head>
+
+<body onload="firstLoad()">
+    <div id="loading"></div>
+    <main>
+        <div class="container" id="home">
+            <div class="intro">
+                <h1>hi, <span class="intro-name">ankit</span> here.
+                    <span class="blinker">|</span>
+                </h1>
+                <h2>I build things for the web.</h2>
+                <p class="intro-desc">I'm a software developer and artist based in Alwar. I have great interest in
+                    full-stack development, human-computer interactions, and everything in between.</p>
+                <a href="mailto:ankity1892003@gmail.com"><i class="fa-solid fa-envelope"></i>Say Hi!</a>
+            </div>
+            <div class="about-me" id="about">
+                <div class="header">
+                    <span>/ about me </span>
+                </div>
+                <div class="about-me-content">
+                    <div class="about-me-desc">
+                        <p class="">I am currently a Software and Web Developer aspirant. At the same time, I am
+                            undertaking
+                            Bachelor's of Technology in Computer Science
+                            at Laxmi Devi Intitute of Engineering & Technology, Alwar.</p>
+                        <label for="">Here are some technologies I have been working with:</label>
+                        <div class="techs">
+                            <ul>
+                                <li class="tech1"> C++</li>
+                                <li class="tech2"> Java</li>
+                                <li class="tech3"> Python</li>
+                            </ul>
+                            <ul>
+                                <li class="tech1"> JavaScript</li>
+                                <li class="tech2"> HTML & CSS</li>
+                            </ul>
+                        </div>
+                        <p>Outside of work, I'm interested in following the developments of science. I also have
+                            interest in playing
+                            video games, photography and making sketches.</p>
+                    </div>
+                    <div class="profile-image">
+                        <img src="img\ankitProfile.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="experience" id="experience">
+                <div class="header">
+                    <span>/ experience </span>
+                </div>
+                <div class="experience-contents">
+                    <div class="experience-tabs">
+                        <button class="experience-tab tab-links active-link" onclick="opentab('tab1')">Amazon</button>
+                        <button class="experience-tab tab-links" onclick="opentab('tab2')">Deliotte</button>
+                        <button class="experience-tab tab-links" onclick="opentab('tab3')">Microsoft</button>
+                        <button class="experience-tab tab-links" onclick="opentab('tab4')">University of
+                            Bikaner</button>
+                    </div>
+                    <div class="experience-content">
+                        <div class="content-tab1 tab-contents active-tab" id="tab1">
+                            <h3>Software Development Engineer @ <span> Amazon</span></h3>
+                            <span class="period">JUL 2022 - PRESENT</span>
+                            <ul>
+                                <li class="desc-list1"><span>&#9657;</span>
+                                    <p>Build distributed storage, index, and query systems that are scalable,
+                                        fault-tolerant, low cost, and easy to manage/use.</p>
+                                </li>
+                                <li class="desc-list1"><span>&#9657;</span>
+                                    <p>Design and build innovative technologies in a large distributed computing
+                                        environment and help lead fundamental changes in the industry..</p>
+                                </li>
+                                <li class="desc-list1"><span>&#9657;</span>
+                                    <p>Collaborate with experienced cross-disciplinary Amazonians to conceive, design,
+                                        and bring innovative products and services to market.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-tab2 tab-contents" id="tab2">
+                            <h3>Software Engineering Intern @ <span> Wattpad</span></h3>
+                            <span class="period">MAY 2020 - APR 2021</span>
+                            <ul>
+                                <li><span>&#9657;</span>
+                                    <p>Developed a responsive React web page (the new Story Details) from scratch, both
+                                        on client and server side, for an app with massive scale (2 billion daily
+                                        requests).</p>
+                                </li>
+                                <li><span>&#9657;</span>
+                                    <p>Iteratively built web experiences for 80 million users across high-traffic pages.
+                                    </p>
+                                </li>
+                                <li><span>&#9657;</span>
+                                    <p>Collaborated with senior engineers and product management following best
+                                        practices for the full software development life cycle, including coding
+                                        standards, code reviews, source control management, build processes, testing,
+                                        and operations.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-tab3 tab-contents" id="tab3">
+                            <h3>Research Engineer @ <span> University of Toronto</span></h3>
+                            <span class="period">MAY 2021 - SEPT 2021</span>
+                            <ul>
+                                <li><span>&#9657;</span>
+                                    <p>Developing and researching an NLP-based framework using state-of-the-art tools
+                                        like Spacy and Stanza to facilitate the derivation of requirements from health
+                                        data by leveraging syntactic dependencies, entity-recognition and rule-based
+                                        match-making.</p>
+                                </li>
+                                <li><span>&#9657;</span>
+                                    <p> Application selected for DCS Research Award ($4,000) as part of the ”Visualizing
+                                        Privacy Analysis Results” project led by Professor Marsha Chechik.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-tab4 tab-contents" id="tab4">
+                            <h3>Software Engineering Intern @ <span> Orange Gate</span></h3>
+                            <span class="period">MAY 2019 - AUG 2019</span>
+                            <ul>
+                                <li><span>&#9657;</span>
+                                    <p>Developed a Node.js smart home system through Facebook’s Messenger integrated
+                                        with Bocco sen- sors and other smart devices (Nest camera, TPLink smart plugs)
+                                        to derive conclusions about the current state of the home</p>
+                                </li>
+                                <li><span>&#9657;</span>
+                                    <p>Identified continuous improvements in data quality, design reports and coding
+                                        activities, presenting results and findings to internal business stakeholders.
+                                    </p>
+                                </li>
+                                <li class="desc-list"><span>&#9657;</span>
+                                    <p>Build distributed storage, index, and query systems that are scalable,
+                                        fault-tolerant, low cost, and easy to manage/use.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+            <div class="software-projects" id="software-projects">
+                <div class="header">
+                    <span>/ software-projects </span>
+                </div>
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <span id="slide-1">
+                                <h3>Netflix Page</h3>
+                                <p class="p-big">It is Netflix Page of Witcher series available on Netflix.</p>
+                                <p class="tech">HTML & CSS</p>
+                                <span class="external-links">
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                </span>
+                            </span>
+                            <span id="slide-2">
+                                <h3>Dynamic Login Page</h3>
+                                <p class="p-big">A dynamic Login Page with Animated Submit Button.
+                                </p>
+                                <p class="tech">HTML & CSS</p>
+                                <span class="external-links">
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                </span>
+                            </span>
+                            <span id="slide-3">
+                                <h3>Trendy Login Page</h3>
+                                <p class="p-big">A trendy login page with rolling background.
+                                </p>
+                                <p class="tech">HTML & CSS</p>
+                                <span class="external-links">
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                </span>
+                            </span>
+                            <span id="slide-4">
+                                <h3>Nike Landing Page</h3>
+                                <p class="p-big">Just a landing page Nike India website.
+                                </p>
+                                <p class="tech">HTML & CSS</p>
+                                <span class="external-links">
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                            <a href="#slide-4"></a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="skw-pages">
+                    <div class="skw-page skw-page-1 active">
+                        <div class="skw-page__half skw-page__half--left">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content"></div>
+                            </div>
+                        </div>
+                        <div class="skw-page__half skw-page__half--right">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content">
+                                    <h2 class="skw-page__heading">Netflix Page</h2>
+                                    <p class="skw-page__description">It is Netflix Page of Witcher series available on Netflix.</p>
+                                    <span class="external-links">
+                                        <a href="https://github.com/BearerOP/netflix_page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                        <a href="https://bearerop.github.io/netflix_page/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skw-page skw-page-2">
+                        <div class="skw-page__half skw-page__half--left">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content">
+                                    <h2 class="skw-page__heading">Dynamic Login Page</h2>
+                                    <p class="skw-page__description">A dynamic Login Page with Animated Submit Button.</p>
+                                    <span class="external-links">
+                                        <a href="https://github.com/BearerOP/login-page1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                        <a href="https://bearerop.github.io/login-page1/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skw-page__half skw-page__half--right">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skw-page skw-page-3">
+                        <div class="skw-page__half skw-page__half--left">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content"></div>
+                            </div>
+                        </div>
+                        <div class="skw-page__half skw-page__half--right">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content">
+                                    <h2 class="skw-page__heading">Trendy Login Page</h2>
+                                    <p class="skw-page__description">A trendy login page with rolling background.</p>
+                                    <span class="external-links">
+                                        <a href="https://github.com/BearerOP/login-page2" target="_blank"><i class="fa-brands fa-github"  target="_blank"></i></a>
+                                        <a href="https://bearerop.github.io/login-page2/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket" target="_blank"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skw-page skw-page-4">
+                        <div class="skw-page__half skw-page__half--left">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content">
+                                    <h2 class="skw-page__heading">Nike Landing Page</h2>
+                                    <p class="skw-page__description">Just a landing page Nike India website.</p>
+                                    <span class="external-links">
+                                        <a href="https://github.com/BearerOP/nike-clone-website" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                        <a href="https://bearerop.github.io/nike-clone-website/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skw-page__half skw-page__half--right">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skw-page skw-page-5">
+                        <div class="skw-page__half skw-page__half--left">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content"></div>
+                            </div>
+                        </div>
+                        <div class="skw-page__half skw-page__half--right">
+                            <div class="skw-page__skewed">
+                                <div class="skw-page__content">
+                                    <h2 class="skw-page__heading">Portfolio Website</h2>
+                                    <p class="skw-page__description">
+                                        It's a template portfolio responsive website.
+                                    </p>
+                                    <span class="external-links">
+                                        <a href="https://github.com/BearerOP/ankit_portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                        <a href="https://bearerop.github.io/ankit_portfolio/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <div class="project-content row11">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span>
+                                <a href="https://github.com/BearerOP/netflix_page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/netflix_page/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Netflix Page
+                        </h3>
+                        <p class="project-desc">
+                            It is Netflix Page of Witcher series available on Netflix.
+                        </p>
+                        <p class="project-tech">
+                            HTML & CSS
+                        </p>
+                    </div>
+                    <div class="project-content row12">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span>
+                                <a href="https://github.com/BearerOP/login-page1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/login-page1/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Dynamic Login Page
+                        </h3>
+                        <p class="project-desc">
+                            A dynamic Login Page with Animated Submit Button.
+                        </p>
+                        <p class="project-tech">
+                            HTML & CSS
+                        </p>
+                    </div>
+                    <div class="project-content row13">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span>
+                                <a href="https://github.com/BearerOP/login-page2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/login-page2/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Trendy Login Page
+                        </h3>
+                        <p class="project-desc">
+                            A trendy login page with rolling background.
+                        </p>
+                        <p class="project-tech">
+                            HTML & CSS
+                        </p>
+                    </div>
+                    <div class="project-content row21">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span>
+                                <a href="https://github.com/BearerOP/nike-clone-website" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/nike-clone-website/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Nike Landing Page
+                        </h3>
+                        <p class="project-desc">
+                            Just a landing page Nike India website.
+                        </p>
+                        <p class="project-tech">
+                            HTML & CSS
+                        </p>
+                    </div>
+                     <div class="project-content row22">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span
+                                <a href="https://github.com/BearerOP/ankit_portfolio" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/ankit_portfolio/" target="_blank" ><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Portfolio Website
+                        </h3>
+                        <p class="project-desc">
+                            It's Just a template portfolio website.
+                        </p>
+                        <p class="project-tech">
+                            HTML, CSS & JavaScript
+                        </p>
+                    </div>
+                   <div class="project-content row23">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span>
+                                <a href="https://github.com/BearerOP/dualThemeCalculator" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/dualThemeCalculator/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Dual Themed Calculator
+                        </h3>
+                        <p class="project-desc">
+                            A dual theme based calculator , using a toggle switch button we can change the theme to dark mode and light mode.
+                        </p>
+                        <p class="project-tech">
+                            HTML, CSS & JavaScript .
+                        </p>
+                    </div>
+                    <div class="project-content row31">
+                        <div class="project-header">
+                            <a href=""><i class="fa-regular fa-folder-closed"></i></a>
+                            <span>
+                                <a href="https://github.com/BearerOP/weather-web" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://bearerop.github.io/weather-web/" target="_blank"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                            </span>
+                        </div>
+                        <h3 class="project-title">
+                            Weather Website using Js
+                        </h3>
+                        <p class="project-desc">
+                            An web application based on JavaScript & OpenWeather API to check the weather status of provided city.
+                            It concludes feels-like temperature, current temperature, humidity percentage, pressure and wind speed at that particular city.
+                        </p>
+                        <p class="project-tech">
+                            HTML, CSS, JavaScript & OpenWeather API.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-navbar">
+            <div class="nav-content">
+                <ul class="nav-links">
+                    <li class="nav-link1"><a href="#home">/home</a></li>
+                    <li class="nav-link2"><a href="#about">/about</a></li>
+                    <li class="nav-link3"><a href="#experience">/experience</a></li>
+                    <li class="nav-link4"><a href="#software-projects">/software-projects</a></li>
+                </ul>
+                <ul class="socials">
+                    <li><a href="mailto: ankity1892003@gmail.com"><i class="fa-solid fa-envelope"
+                        target="_blank"></i></a></li>
+                        <li><a href="https://github.com/BearerOP" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/ankit-yadav-a67396239/"><i class="fa-brands fa-linkedin"
+                            target="_blank"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </main>
+        <div class="footer">
+            <span>Built and designed by Ankit Yadav.</span>
+            <span class="rights">All Rights reserved. &copy;</span>
+        </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
