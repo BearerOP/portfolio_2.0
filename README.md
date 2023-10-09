@@ -1,7 +1,7 @@
 # portfolio_2.0
 
 
-Quick Link : https://bearerop.github.io/portfolio_2.0/
+Quick Link : https://ankityadav189.netlify.app
 
 
 
